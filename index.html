@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대파님의 포트폴리오</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .project {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>안녕하세요! 대파님의 포트폴리오입니다 🧅</h1>
+  </header>
+
+  <section id="about">
+    <h2>소개</h2>
+    <p>소프트웨어 개발자 대파입니다. 다양한 웹 서비스와 TV 소프트웨어를 개발해 왔으며, 현재는 Docker와 인프라 자동화, AI에도 관심이 많습니다.</p>
+  </section>
+
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <div class="project">
+      <h3>🖥 TV 서비스 플랫폼 개발</h3>
+      <p>삼성전자 TV에서 동작하는 백엔드 시스템과 앱을 개발하였습니다. 안정성과 확장성을 고려한 구조 설계가 핵심이었습니다.</p>
+    </div>
+    <div class="project">
+      <h3>🧠 AI를 활용한 콘텐츠 분석</h3>
+      <p>음성 인식 및 텍스트 분석 기술을 활용하여, 사용자 피드백을 자동으로 분류 및 요약하는 시스템을 구현했습니다.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>기술 스택</h2>
+    <ul>
+      <li>Python, JavaScript, TypeScript</li>
+      <li>Docker, Docker Swarm, Linux 서버</li>
+      <li>HTML, CSS, React</li>
+      <li>PostgreSQL, Redis</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>연락하기</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">메시지</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">보내기
